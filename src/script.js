@@ -66,7 +66,16 @@ window.TE = (function () {
      */
     play: function () {
       try {
-        _teCanvas.play();
+        // 重置画布
+        _teCanvas.rerun();
+        // 隐藏蒙层
+        document.getElementById("mask").style.visibility = "hidden";
+        // 隐藏游戏解释字样
+        document.getElementById("game-over").style.visibility = "hidden";
+        // 隐藏重新开始按钮
+        document.getElementById("restart").style.visibility = "hidden";
+        // 隐藏开始游戏按钮
+        document.getElementById("start").style.visibility = "hidden";
       } catch (error) {
         _handleError(error);
       }

@@ -1,0 +1,141 @@
+html {
+  padding: 0;
+  margin: 0;
+  color: #c2ffad;
+  font-size: 18px;
+  font-weight: normal;
+  background: #3b3d3b;
+}
+
+#container {
+  position: relative;
+  margin: 30px auto;
+  padding: 45px 30px;
+  border-radius: 50%/5%;
+  background-color: #000;
+  width: 595px;
+}
+#container:before {
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: -5%;
+  right: -5%;
+  content: "";
+  background: #000;
+  border-radius: 5%/50%;
+  z-index: -1;
+}
+
+#left {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  height: 500px;
+}
+#left p {
+  margin: 0 0 10px 0;
+}
+#left #guide {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+#left table tr td:first-child {
+  text-align: center;
+}
+
+#score {
+  color: red;
+  font-weight: bold;
+  vertical-align: middle;
+}
+#rows {
+  color: rgb(107, 107, 248);
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#centre {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: 500px;
+}
+
+#mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+#game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -70px;
+  margin-left: -36px;
+  visibility: hidden;
+  font-weight: bolder;
+}
+
+#restart,
+#start {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 110px;
+  margin-top: -20px;
+  margin-left: -55px;
+  border: none;
+  background: #c2ffad;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#restart {
+  visibility: hidden;
+}
+
+#game-canvas {
+  background: white;
+  width: 300px;
+  height: 500px;
+}
+
+#right {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  height: 500px;
+}
+
+#next-msg {
+  margin: 0;
+  width: 140px;
+  text-align: right;
+}
+#next-canvas {
+  margin: 0;
+  width: 140px;
+  height: 140px;
+}
+
+#github {
+  margin: 310px 0 0 0px;
+  width: 140px;
+  text-align: right;
+}
+#github a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}

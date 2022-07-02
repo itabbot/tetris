@@ -49,10 +49,7 @@ window.TE = (function () {
 
         // 实例化画布对象
         _teCanvas = new TECanvas("game-canvas", "next-canvas", {
-          // 基本配置
-          rowNum: 20, // 设置游戏画布行数（纵向格子数量）
-          colNum: 12, // 设置游戏画布列数（横向格子数量）
-          // 设置事件处理函数
+          gridSize: 20, // 设置画布格子的边长（像素）
           gameOver: _handleGameOver, // 设置“游戏失败事件”处理函数
           scoreChange: _handleScoreChange, // 设置“游戏得分变化事件”处理函数
           rowsChange: _handleRowsChange, // 设置“已经消灭行数变化事件”处理函数
@@ -61,6 +58,7 @@ window.TE = (function () {
         _handleError(error);
       }
     },
+
     /**
      * 开始游戏
      */
